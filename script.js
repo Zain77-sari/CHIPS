@@ -31,8 +31,12 @@ for (var i = 0; i < navLinks.length; i++) {
             targetSection.scrollIntoView({ behavior: "smooth" });
         }
     };
+    
 }
-
+window.onload = function() {
+    var navHeight = document.querySelector('nav').offsetHeight;
+    document.querySelector('.banner').style.marginTop = navHeight + 'px';
+};
 
 window.onscroll = function() {
     var sections = document.getElementsByTagName("section");
