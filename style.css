@@ -19,8 +19,6 @@ nav {
     left: 0;
     width: 100%;
     background: linear-gradient(135deg, #ff8c00, #ffa500);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
     padding: 15px 0;
     margin: 0;
 }
@@ -30,7 +28,7 @@ nav {
     justify-content: center;
     list-style: none;
     gap: 30px;
-    flex-wrap: wrap;
+    
 }
 
 .navlink {
@@ -39,15 +37,13 @@ nav {
     color: white;
     font-size: 18px;
     padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+   
 }
 
 .navlink:hover {
     background: white;
     color: #ff8c00;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .banner {
@@ -72,8 +68,7 @@ nav {
     margin: 40px auto;
     max-width: 1200px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   
 }
 
 .menu {
@@ -82,7 +77,7 @@ nav {
     max-width: 1200px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 
@@ -93,7 +88,7 @@ nav {
     width: 80%;
     max-width: 900px;
     background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .table th {
@@ -197,7 +192,7 @@ nav {
     padding: 30px;
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 label {
@@ -210,7 +205,7 @@ label {
 .textarea{
     outline: none;
     border-color: #ff8c00;
-    box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
+    
 }
 
 .submit-btn {
