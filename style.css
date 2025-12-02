@@ -62,7 +62,24 @@ nav {
     margin: 0;
     padding: 0;
 }
+.order-button-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
 
+.order-now-btn {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.order-now-btn:hover {
+    transform: scale(1.1);
+}
 .section {
     padding: 60px 20px;
     margin: 40px auto;
