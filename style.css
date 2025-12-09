@@ -1,1 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    text-align: center;
+    padding-top: 0;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    padding: 15px 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navlink:hover {
+    background: white;
+    color: #ff8c00;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#banner-img {
+    width: 100%;
+    height: 650px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.order-button-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.order-now-btn {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+}
+
+.order-now-btn:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 60px 20px;
+    margin: 100px auto 40px;
+    max-width: 1200px;
+    background: white;
+}
+.menu {
+    padding: 60px 20px;
+    margin: 100px auto 40px;
+    max-width: 1200px;
+    background: white;
+}
+
+h2 {
+    color: #ff8c00;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.table {
+    margin: 30px auto;
+    border: 4px solid #ff8c00;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+}
+
+.table th {
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.table tr:hover {
+    background: #fff5e6;
+    transition: background 0.3s ease;
+}
+
+.menu-table .menu-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-table .menu-item:hover {
+    background: #ffe4b3;
+    transform: scale(1.02);
+}
+
+.food-img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #ff8c00;
+    transition: transform 0.3s ease;
+}
+
+.food-img:hover {
+    transform: scale(1.1);
+}
+
+.sauces-table {
+    width: 70%;
+}
+
+.sauces-table td {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sauces-table tr:nth-child(odd) {
+    background: #fff7e6;
+}
+
+.sauces-table tr:nth-child(even) {
+    background: #ffe7c2;
+}
+
+.sauces-table tr:hover {
+    background: #ffd699;
+}
+
+.extra-table {
+    width: 50%;
+}
+
+.extra-table th {
+    font-size: 20px;
+}
+
+.extra-table td {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.vat {
+    margin-top: 40px;
+    font-weight: bold;
+    color: #ff8c00;
+    font-size: 18px;
+    padding: 15px;
+    background: #fff5e6;
+    display: inline-block;
+}
+
+.location-list {
+    list-style: none;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.location-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.location-item h2 {
+    color: #ff8c00;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.location-item p {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.time {
+    font-weight: bold;
+    color: #555;
+}
+
+.location-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff8c00;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.location-link:hover {
+    color: #ffa500;
+    text-decoration: underline;
+}
+
+#contactForm {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff8c00;
+}
+
+.submit-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
+}
+
+.submit-img {
+    width: 120px;
+    height: auto;
+}
+
+footer {
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #banner-img {
+        height: 400px;
+    }
+
+    .table {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .food-img {
+        width: 70px;
+        height: 60px;
+    }
+
+    #contactForm {
+        padding: 20px;
+    }
+
+    .sauces-table,
+    .extra-table {
+        width: 95%;
+    }
+}
