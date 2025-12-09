@@ -36,9 +36,7 @@ nav {
     font-weight: bold;
     color: white;
     font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    
+    padding: 10px 20px;  
 }
 
 .navlink:hover {
@@ -69,7 +67,6 @@ nav {
 .order-now-btn {
     width: 120px;
     height: auto;
-    
 }
 
 .order-now-btn:hover {
@@ -79,15 +76,12 @@ nav {
 .section {
     padding: 60px 20px;
     margin: 40px auto;
-    max-width: 1200px;
     background: white;
-
 }
 
 .menu {
     padding: 60px 20px;
     margin: 40px auto;
-    max-width: 1200px;
     background: white;
     
 }
@@ -95,22 +89,15 @@ nav {
 h2 {
     color: #ff8c00;
     font-size: 32px;
-    margin-bottom: 25px;
     text-transform: uppercase;
 }
 
-h2 {
-    color: #ff8c00;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
 
 .table {
     margin: 30px auto;
     border: 4px solid #ff8c00;
     border-collapse: collapse;
     width: 80%;
-    max-width: 900px;
     background: white;
     
 }
@@ -149,9 +136,6 @@ h2 {
     width: 100px;
     height: 80px;
     object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid #ff8c00;
-    
 }
 
 .food-img:hover {
@@ -211,14 +195,12 @@ h2 {
 }
 
 .location-item {
-    margin-bottom: 40px;
     text-align: center;
 }
 
 .location-item h2 {
     color: #ff8c00;
     font-size: 28px;
-    margin-bottom: 20px;
 }
 
 .location-item p {
@@ -262,21 +244,16 @@ label {
     color: #333;
 }
 
-input,
-textarea {
+input:focus,
+textarea:foucus {
     width: 100%;
     padding: 12px;
     border: 2px solid #ddd;
-    border-radius: 5px;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 5px;
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #ff8c00;
   
 }
 
@@ -316,8 +293,6 @@ section {
     margin-bottom: 50px;
 }
 
-
-@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         gap: 10px;
