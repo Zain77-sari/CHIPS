@@ -29,13 +29,6 @@ nav {
     justify-content: center;
     list-style: none;
     gap: 30px;
-flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    display: inline-block;
 }
 
 .navlink {
@@ -62,6 +55,7 @@ flex-wrap: wrap;
 #banner-img {
     width: 100%;
     height: 650px;
+    object-fit: cover;
     display: block;
     margin: 0;
     padding: 0;
@@ -77,6 +71,9 @@ flex-wrap: wrap;
     width: 120px;
     height: auto;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .order-now-btn:hover {
@@ -85,15 +82,18 @@ flex-wrap: wrap;
 
 .section {
     padding: 60px 20px;
-    margin: 100px auto 40px;
+    margin: 40px auto;
     max-width: 1200px;
     background: white;
+
 }
+
 .menu {
     padding: 60px 20px;
-    margin: 100px auto 40px;
+    margin: 40px auto;
     max-width: 1200px;
     background: white;
+    
 }
 
 h2 {
@@ -103,6 +103,12 @@ h2 {
     text-transform: uppercase;
 }
 
+h2 {
+    color: #ff8c00;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
 .table {
     margin: 30px auto;
     border: 4px solid #ff8c00;
@@ -110,6 +116,7 @@ h2 {
     width: 80%;
     max-width: 900px;
     background: white;
+    
 }
 
 .table th {
@@ -146,6 +153,7 @@ h2 {
     width: 100px;
     height: 80px;
     object-fit: cover;
+    border-radius: 8px;
     border: 3px solid #ff8c00;
     transition: transform 0.3s ease;
 }
@@ -196,6 +204,7 @@ h2 {
     font-size: 18px;
     padding: 15px;
     background: #fff5e6;
+    border-radius: 5px;
     display: inline-block;
 }
 
@@ -228,19 +237,21 @@ h2 {
     color: #555;
 }
 
-.location-link {
-    display: inline-block;
-    margin-top: 15px;
-    color: #ff8c00;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+
+.instagram-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
-.location-link:hover {
-    color: #ffa500;
-    text-decoration: underline;
+.instagram-section strong {
+    font-size: 24px;
+    letter-spacing: 1px;
 }
+
 
 #contactForm {
     margin: 40px auto;
@@ -248,6 +259,8 @@ h2 {
     text-align: left;
     padding: 30px;
     background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -271,6 +284,7 @@ input:focus,
 textarea:focus {
     outline: none;
     border-color: #ff8c00;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
 }
 
 .submit-btn {
@@ -279,6 +293,7 @@ textarea:focus {
     padding: 0;
     margin-top: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -288,7 +303,9 @@ textarea:focus {
 .submit-img {
     width: 120px;
     height: auto;
+    border-radius: 5px;
 }
+
 
 footer {
     background: linear-gradient(135deg, #ff8c00, #ffa500);
@@ -306,6 +323,8 @@ section {
     margin-bottom: 50px;
 }
 
+
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         gap: 10px;
@@ -333,4 +352,3 @@ section {
     .extra-table {
         width: 95%;
     }
-}
