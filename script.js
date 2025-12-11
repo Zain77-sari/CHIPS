@@ -1,48 +1,7 @@
 document.getElementById("contactForm").onsubmit = function() {
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
-    
-    alert("Your order has been submitted successfully!\n\nName: " + name + "\nPhone: " + phone + "\nOrder: " + message + "\n\nWe will contact you soon!");
-    
+    alert("Your order has been submitted successfully!");
     return false;
 };
-
 document.getElementsByClassName("menu-item")[0].onclick = function() {
-    alert("Amsterdam Chips - 1.400 BD\n\nDelicious premium chips with special seasonings!\nAvailable now!");
-};
-
-document.getElementsByClassName("menu-item")[1].onclick = function() {
-    alert("Regular Chips - 1.200 BD\n\nClassic crispy chips, perfectly seasoned!\nAvailable now!");
-};
-
-window.onload = function() {
-    var banner = document.querySelector('.banner');
-    if (banner) {
-        var navHeight = document.querySelector('nav').offsetHeight;
-        banner.style.marginTop = navHeight + 'px';
-    }
-};
-
-window.onscroll = function() {
-    var sections = document.getElementsByTagName("section");
-    var navLinks = document.getElementsByClassName("navlink");
-    
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
-        var top = section.offsetTop - 100;
-        var bottom = top + section.offsetHeight;
-        
-        if (window.scrollY >= top && window.scrollY < bottom) {
-            for (var j = 0; j < navLinks.length; j++) {
-                navLinks[j].style.background = "transparent";
-            }
-            
-            var currentLink = document.querySelector('a[href="#' + section.id + '"]');
-            if (currentLink) {
-                currentLink.style.background = "white";
-                currentLink.style.color = "#ff8c00";
-            }
-        }
-    }
+    alert("Amsterdam Chips - 1.400 BD");
 };
